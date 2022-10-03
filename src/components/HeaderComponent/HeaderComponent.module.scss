@@ -1,0 +1,21 @@
+.navLink {
+  display: flex;
+  &:visited {
+    color: white;
+  }
+}
+
+.navLinkCloseMenu {
+  color: black;
+  display: flex;
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
+}
+
+.typography {
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.error-msg {
+  color: brown;
+}

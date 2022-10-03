@@ -1,0 +1,15 @@
+.movieInfoWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 30px 15px;
+  padding: 25px;
+  border: 1px solid lightGray;
+  border-radius: 5px;
+  box-shadow: 0 0 15px -10px rgb(0 0 0 / 20%);
+}
+
+.movieInfoWrap img {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
