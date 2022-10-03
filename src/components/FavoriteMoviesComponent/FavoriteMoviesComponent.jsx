@@ -18,6 +18,10 @@ function FavoriteMoviesComponent({ favoriteMovies }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  function navigateToMovieInfo(movieId) {
+    navigate(`/movie/${movieId}`);
+  }
+
   const removeMovie = (movie) => {
     dispatch(removeFavoriteMovie(movie));
   }
@@ -36,7 +40,7 @@ function FavoriteMoviesComponent({ favoriteMovies }) {
       </div>
       <Box className={MovieClasses.moviesList}>
         {favoriteMovies.map((movie, i) => (
-          <Card sx={{ maxWidth: 200 }} className={MovieClasses.cardWrap}>
+          <Card key={i} sx={{ maxWidth: 200 }} className={MovieClasses.cardWrap}>
             <CardMedia
               component="img"
               image={`${IMAGE_MOVIE_URL}${movie.poster_path}`}
